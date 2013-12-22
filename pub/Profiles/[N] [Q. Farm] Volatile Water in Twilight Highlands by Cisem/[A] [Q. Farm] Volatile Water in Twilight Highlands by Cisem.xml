@@ -1,0 +1,74 @@
+﻿<!--
+Created by Cisem
+http://cisems.wordpress.com
+-->
+
+ <HBProfile>
+
+   <Name>[A] [Q. Farm] Volatile Water in Twilight Highlands by Cisem</Name>
+   <MinLevel>1</MinLevel>
+   <MaxLevel>999</MaxLevel>
+   
+   <MinDurability>0.3</MinDurability>
+   <MinFreeBagSlots>1</MinFreeBagSlots>
+   
+   <MailGrey>False</MailGrey>
+   <MailWhite>False</MailWhite>
+   <MailGreen>False</MailGreen>
+   <MailBlue>False</MailBlue>
+   <MailPurple>False</MailPurple>
+   
+   <SellGrey>True</SellGrey>
+   <SellWhite>False</SellWhite>
+   <SellGreen>False</SellGreen>
+   <SellBlue>False</SellBlue>
+   <SellPurple>False</SellPurple>
+   
+   <TargetElites>False</TargetElites>	
+   
+   <AvoidMobs>
+   </AvoidMobs>
+   
+   <Blackspots>
+   </Blackspots>
+   
+   <Mailboxes>
+   </Mailboxes>
+   
+   <Vendors>
+   </Vendors>
+   
+   <QuestOrder>
+   <ClearVendor />
+   <ClearMailbox />
+   
+   <While Condition="true" >
+   <If Condition="((Me.FreeBagSlots &lt;= 10) || Me.LowestDurabilityPercent &gt; 20.0)" >
+
+   <CustomBehavior File="Message" Text="Moving to farm location" LogColor="Lime" />
+   <CustomBehavior File="FlyTo" X="-3926.435" Y="-6095.038" Z="8.597919" />
+   <CustomBehavior File="ForcedDismount" />
+   </If>
+   <While Condition="(Me.FreeBagSlots &gt; 6) &amp;&amp; (Me.LowestDurabilityPercent &lt; 20.0)">
+   
+   <SetGrindArea>
+   <GrindArea>
+   <TargetMinLevel>84</TargetMinLevel>
+   <TargetMaxLevel>84</TargetMaxLevel>
+   <Factions>1932</Factions>
+   <MaxDistance>100</MaxDistance>
+   <Hotspots>
+<Hotspot X="-3930.2" Y="-6093.086" Z="8.646697" />
+<Hotspot X="-3867.014" Y="-6041.173" Z="8.38093" />
+<Hotspot X="-3815.838" Y="-6005.557" Z="7.126217" />
+<Hotspot X="-3765.638" Y="-5961.975" Z="9.109812" />
+<Hotspot X="-3733.011" Y="-5914.417" Z="14.64452" />
+   </Hotspots>
+   </GrindArea>
+   </SetGrindArea>
+   
+   <GrindTo Condition="(Me.FreeBagSlots &lt;= 6)" GoalText="Farming Volatile Water" />
+   </While>
+   </While>
+   </QuestOrder>
+</HBProfile>

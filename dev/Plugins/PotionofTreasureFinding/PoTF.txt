@@ -1,0 +1,13 @@
+WHAT DOES IT DO?
+It will use "Potion of Treasure Finding" if you have it in your bag.
+
+WHAT DOES THE ITEM "Potion of Treasure Finding" DO?
+Allows you to sometimes find extra treasure from monsters in Mount Hyjal, Vashj'ir, Deepholm, Twilight Highlands and Uldum.  Lasts 1 hour.  Effect persists through death. (1 Min Cooldown).
+
+WHERE CAN I GET THE ITEM?
+Alchemy with 600 skill or buy it from auction house.
+
+URL
+Potion of Treasure Finding - http://www.wowhead.com/item=58488/
+Alchemy - http://www.wowhead.com/spell=80726
+My website - http://cisems.wordpress.com

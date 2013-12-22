@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DungeonBuddyProfile>
+  <Name>Coren Direbrew</Name>
+  <DungeonId>287</DungeonId>
+  <BossEncounters>
+    <Boss isFinal="true" entry="23872" name="Coren Direbrew" killOrder="1" optional="false" X="893.1927" Y="-132.5949" Z="-49.74958" />
+  </BossEncounters>
+  <Blackspots>
+  </Blackspots>
+</DungeonBuddyProfile>

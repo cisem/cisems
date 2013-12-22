@@ -1,0 +1,13 @@
+WHAT DOES IT DO?
+It will use "Potion of Luck" if you have it in your bag.
+
+WHAT DOES THE ITEM "Potion of Luck" DO?
+Allows you to sometimes find extra treasure from monsters in Pandaria.  Lasts 20 min.  Effect persists through death. (20 Min Cooldown).
+
+WHERE CAN I GET THE ITEM?
+Alchemy with 600 skill or buy it from auction house.
+
+URL
+Potion of Luck - http://www.wowhead.com/item=93351/
+Alchemy - http://www.wowhead.com/spell=114779/
+My website - http://cisems.wordpress.com

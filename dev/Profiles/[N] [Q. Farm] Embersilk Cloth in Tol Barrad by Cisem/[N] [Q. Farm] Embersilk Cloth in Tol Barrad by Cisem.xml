@@ -1,0 +1,78 @@
+﻿<!--
+Created by Cisem
+http://cisems.wordpress.com
+-->
+
+ <HBProfile>
+
+   <Name>[N] [Q. Farm] Embersilk Cloth in Tol Barrad by Cisem</Name>
+   <MinLevel>1</MinLevel>
+   <MaxLevel>999</MaxLevel>
+   
+   <MinDurability>0.3</MinDurability>
+   <MinFreeBagSlots>1</MinFreeBagSlots>
+   
+   <MailGrey>False</MailGrey>
+   <MailWhite>False</MailWhite>
+   <MailGreen>False</MailGreen>
+   <MailBlue>False</MailBlue>
+   <MailPurple>False</MailPurple>
+   
+   <SellGrey>True</SellGrey>
+   <SellWhite>False</SellWhite>
+   <SellGreen>False</SellGreen>
+   <SellBlue>False</SellBlue>
+   <SellPurple>False</SellPurple>
+   
+   <TargetElites>False</TargetElites>	
+   
+   <AvoidMobs>
+   </AvoidMobs>
+   
+   <Blackspots>
+   </Blackspots>
+   
+   <Mailboxes>
+   </Mailboxes>
+   
+   <Vendors>
+   </Vendors>
+   
+   <QuestOrder>
+   <ClearVendor />
+   <ClearMailbox />
+   
+   <While Condition="true" >
+   <If Condition="((Me.FreeBagSlots &lt;= 10) || Me.LowestDurabilityPercent &gt; 20.0)" >
+
+   <CustomBehavior File="Message" Text="Moving to farm location" LogColor="Lime" />
+   <CustomBehavior File="FlyTo" X="-482.4363" Y="1532.406" Z="18.73154" />
+   <CustomBehavior File="ForcedDismount" />
+   </If>
+   <While Condition="(Me.FreeBagSlots &gt; 6) &amp;&amp; (Me.LowestDurabilityPercent &lt; 20.0)">
+   
+   <SetGrindArea>
+   <GrindArea>
+   <TargetMinLevel>84</TargetMinLevel>
+   <TargetMaxLevel>87</TargetMaxLevel>
+   <Factions>14 189</Factions>
+   <MaxDistance>100</MaxDistance>
+   <Hotspots>   
+<Hotspot X="-482.4363" Y="1532.406" Z="18.73154" />
+<Hotspot X="-445.3441" Y="1570.758" Z="23.96235" />
+<Hotspot X="-387.2265" Y="1580.62" Z="18.55598" />
+<Hotspot X="-412.8283" Y="1620.609" Z="18.39801" />
+<Hotspot X="-387.1348" Y="1663.812" Z="18.75512" />
+<Hotspot X="-392.073" Y="1706.836" Z="24.22076" />
+<Hotspot X="-353.4437" Y="1723.66" Z="23.25227" />
+<Hotspot X="-342.2228" Y="1653.158" Z="18.97332" />
+<Hotspot X="-372.3396" Y="1596.487" Z="22.73998" />  
+   </Hotspots>
+   </GrindArea>
+   </SetGrindArea>
+   
+   <GrindTo Condition="(Me.FreeBagSlots &lt;= 6)" GoalText="Farming Embersilk Cloth" />
+   </While>
+   </While>
+   </QuestOrder>
+</HBProfile>

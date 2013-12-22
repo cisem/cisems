@@ -1,0 +1,3 @@
+HOW TO INSTALL
+The Headless Horseman.cs - Dungeon Scripts\Classic\Dungeons
+The Headless Horseman.xml - Default Profiles\DungeonBuddy\Classic\Dungeons

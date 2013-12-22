@@ -1,0 +1,70 @@
+<!--
+Created by Cisem
+http://cisems.wordpress.com
+-->
+
+ <HBProfile>
+
+   <Name>[N. Grind] Essence of Air in Silithus by Cisem</Name>
+   <MinLevel>1</MinLevel>
+   <MaxLevel>999</MaxLevel>
+   
+   <MinDurability>0.3</MinDurability>
+   <MinFreeBagSlots>1</MinFreeBagSlots>
+   
+   <MailGrey>False</MailGrey>
+   <MailWhite>False</MailWhite>
+   <MailGreen>False</MailGreen>
+   <MailBlue>False</MailBlue>
+   <MailPurple>False</MailPurple>
+   
+   <SellGrey>True</SellGrey>
+   <SellWhite>False</SellWhite>
+   <SellGreen>False</SellGreen>
+   <SellBlue>False</SellBlue>
+   <SellPurple>False</SellPurple>
+   
+   <ProtectedItems>
+		<Item name="Essence of Air" entry="7082" />
+   </ProtectedItems>
+   
+   <TargetElites>False</TargetElites>	
+   
+   <AvoidMobs>
+		<Mob Name="Desert Rumbler" Entry="11746" />
+   </AvoidMobs>
+   
+   <Blackspots>
+   </Blackspots>
+   
+   <Mailboxes>
+   </Mailboxes>
+   
+   <Vendors>
+		<Vendor Name="Vargus" Entry="15176" Type="Repair" X="-6860.931" Y="753.0439" Z="42.47255" />
+   </Vendors>
+   
+   <GrindArea>
+       <TargetMinLevel>52</TargetMinLevel>
+       <TargetMaxLevel>57</TargetMaxLevel>
+       <Factions>91</Factions>
+       <MaxDistance>30</MaxDistance>
+       <Hotspots>
+			<Hotspot X="-6263.237" Y="1318.119" Z="13.97443" />
+			<Hotspot X="-6289.4" Y="1429.507" Z="10.05422" />
+			<Hotspot X="-6374.424" Y="1412.577" Z="2.636261" />
+			<Hotspot X="-6388.776" Y="1497.929" Z="4.361045" />
+			<Hotspot X="-6444.9" Y="1514.107" Z="5.443416" />
+			<Hotspot X="-6598.502" Y="1736.159" Z="4.415687" />
+			<Hotspot X="-6640.382" Y="1800.503" Z="3.952609" />
+			<Hotspot X="-6719.566" Y="1868.113" Z="3.975918" />
+			<Hotspot X="-6668.127" Y="1926.932" Z="6.270998" />
+			<Hotspot X="-6566.854" Y="1936.181" Z="6.79899" />
+			<Hotspot X="-6568.938" Y="1850.929" Z="5.256906" />
+			<Hotspot X="-6526.4" Y="1798.875" Z="2.61727" />
+			<Hotspot X="-6469.637" Y="1763.721" Z="15.2156" />
+			<Hotspot X="-6439" Y="1857.962" Z="5.967894" />
+			<Hotspot X="-6401.561" Y="1879.678" Z="5.927948" />
+		</Hotspots>
+   </GrindArea>
+</HBProfile>

@@ -1,0 +1,101 @@
+<!--
+Created by Cisem
+http://cisems.wordpress.com
+-->
+
+ <HBProfile>
+
+   <Name>[N] [Q. Farm] Exotic Leather in VotFW by Cisem</Name>
+   <MinLevel>1</MinLevel>
+   <MaxLevel>999</MaxLevel>
+   
+   <MinDurability>0.3</MinDurability>
+   <MinFreeBagSlots>1</MinFreeBagSlots>
+   
+   <MailGrey>False</MailGrey>
+   <MailWhite>False</MailWhite>
+   <MailGreen>False</MailGreen>
+   <MailBlue>False</MailBlue>
+   <MailPurple>False</MailPurple>
+   
+   <SellGrey>True</SellGrey>
+   <SellWhite>False</SellWhite>
+   <SellGreen>False</SellGreen>
+   <SellBlue>False</SellBlue>
+   <SellPurple>False</SellPurple>
+   
+   <TargetElites>False</TargetElites>	
+   
+   <AvoidMobs>
+	<Mob Name="Softshell Snapling" Entry="64789"/>
+   </AvoidMobs>
+   
+   <Blackspots>
+   </Blackspots>
+   
+   <Mailboxes>
+   </Mailboxes>
+   
+   <Vendors>
+   </Vendors>
+   
+   <QuestOrder>
+   <ClearVendor />
+   <ClearMailbox />
+   
+   <While Condition="true" >
+   <If Condition="((Me.FreeBagSlots &lt;= 10) || Me.LowestDurabilityPercent &gt; 20.0)" >
+   
+   <SetVendor>
+   <Vendors>
+   <Vendor Name="Trader Jambeezi" Entry="59583" Type="Repair" X="-151.1813" Y="488.6205" Z="199.1409" />
+   </Vendors>
+   </SetVendor>
+   
+   <CustomBehavior File="Message" Text="Bags are geting full, running / flying to vendor and mail." LogColor="Lime" />
+   <If Condition="SpellManager.HasSpell(&quot;Wisdom of the Four Winds&quot;)">
+   <CustomBehavior File="FlyTo" X="-151.1813" Y="488.6205" Z="199.1409" />
+   </If>
+   <CustomBehavior File="ForceSetVendor" DoMail="True" DoRepair="True" DoSell="True" DoTrain="False" />
+   </If>
+   <If Condition="SpellManager.HasSpell(&quot;Wisdom of the Four Winds&quot;)">
+   <CustomBehavior File="Message" Text="I´m in Pandaland, flying to farm location" LogColor="Lime" />
+   <CustomBehavior File="FlyTo" X="336.8988" Y="25.9704" Z="149.3003" />
+   <CustomBehavior File="ForcedDismount" />
+   </If>
+   <If Condition="!SpellManager.HasSpell(&quot;Wisdom of the Four Winds&quot;)">
+   <CustomBehavior File="Message" Text="I´m in Pandaland, I can not fly here, taking transport if avilable." LogColor="Lime" />
+   <CustomBehavior File="ForcedDismount" />
+   </If>
+   <While Condition="(Me.FreeBagSlots &gt; 6) &amp;&amp; (Me.LowestDurabilityPercent &lt; 20.0)">
+   
+   <SetGrindArea>
+   <GrindArea>
+   <TargetMinLevel>85</TargetMinLevel>
+   <TargetMaxLevel>87</TargetMaxLevel>
+   <Factions>2588 190</Factions>
+   <MaxDistance>100</MaxDistance>
+   <Hotspots>
+   <Hotspot X="336.8988" Y="25.9704" Z="149.3003" />
+   <Hotspot X="284.2004" Y="-12.96114" Z="167.8548" />
+   <Hotspot X="229.1868" Y="48.29051" Z="162.4573" />
+   <Hotspot X="252.3445" Y="104.3118" Z="148.0666" />
+   <Hotspot X="319.2683" Y="101.8025" Z="146.3985" />
+   </Hotspots>
+   </GrindArea>
+   </SetGrindArea>
+   
+   <GrindTo Condition="(Me.FreeBagSlots &lt;= 6)" GoalText="Farming Leather" />
+   <If condition="true">
+   <While Condition="(HasItem(72201))" > <!-- Plump Intestines -->
+   <CustomBehavior File="Misc\RunLua" Lua="UseItemByName(72201)" WaitTime="1000" />
+   <CustomBehavior File="Message" Text="Open Plump Intestines" LogColor="Lime" />
+   <CustomBehavior File="WaitTimer" WaitTime="1000" GoalText="Open Plump Intestines {TimeRemaining}" />
+   </While>
+   <CustomBehavior File="Message" Text="Removing gray item with low vendor value." LogColor="Lime" />
+   <CustomBehavior File="DeleteItems" Ids="81201, 81197, 3181" />
+   </If>
+   </While>
+   </While>
+   </QuestOrder>
+</HBProfile>

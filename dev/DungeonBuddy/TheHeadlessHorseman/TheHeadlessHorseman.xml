@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DungeonBuddyProfile>
+  <Name>Headless Horseman</Name>
+  <DungeonId>285</DungeonId>
+  <BossEncounters>
+    <Boss isFinal="true" entry="23682" name="Headless Horseman" killOrder="1" optional="false" X="1114.666" Y="612.3626" Z="0.4722703" />
+  </BossEncounters>
+  <Blackspots>
+  </Blackspots>
+</DungeonBuddyProfile>
