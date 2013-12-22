@@ -1,0 +1,125 @@
+<!--
+Created by Cisem
+http://cisems.wordpress.com
+-->
+
+<HBProfile creator="Cisem" version="1.0">
+	<Name>[A] [Q. Farm] Mote of Harmony by Cisem in VoEB Stonebark Trickster</Name>
+   
+	<MinLevel>1</MinLevel>
+	<MaxLevel>91</MaxLevel>
+   
+	<MinDurability>0.1</MinDurability>
+	<MinFreeBagSlots>0</MinFreeBagSlots>
+	
+	<MailGrey>False</MailGrey>
+	<MailWhite>True</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+   
+	<SellGrey>True</SellGrey>
+	<SellWhite>False</SellWhite>
+	<SellGreen>False</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+   
+	<TargetElites>True</TargetElites>
+	
+	<AvoidMobs>
+	</AvoidMobs>
+	<Blackspots>
+	</Blackspots>
+	<Mailboxes></Mailboxes>
+ 	<Vendors></Vendors>
+	<ProtectedItems></ProtectedItems>
+	
+	<QuestOrder>
+		<ClearVendor />
+		<ClearMailbox />
+		
+		<If Condition="SpellManager.HasSpell(&quot;Wisdom of the Four Winds&quot;)">
+		<CustomBehavior File="UserSettings" UseFlightPaths="False" LootMobs="True" SkinMobs="True" NinjaSkin="True" PullDistance="45" KillBetweenHotspots="True" FindVendorsAutomatically="False" LogoutForInactivity="True" />
+		</If>
+		<If Condition="!SpellManager.HasSpell(&quot;Wisdom of the Four Winds&quot;)">
+		<CustomBehavior File="UserSettings" UseFlightPaths="True" LootMobs="True" SkinMobs="True" NinjaSkin="True" PullDistance="45" KillBetweenHotspots="True" FindVendorsAutomatically="False" LogoutForInactivity="True" />
+		</If>
+<While Condition="true" >
+			<!-- Vendor -->
+		    <If Condition="(Me.FreeBagSlots &lt;= 6) || (Me.LowestDurabilityPercent &gt; 20.0)" >
+				<SetVendor>
+					<Vendors>
+						<Vendor Name="Pera Firestone" Entry="64480" Type="Repair" X="937.8229" Y="327.382" Z="506.1209" />
+					</Vendors>
+				</SetVendor>
+				<SetMailbox>
+					<Mailboxes>
+						<Mailbox X="871.1721" Y="274.3196" Z="503.2269" />
+					</Mailboxes>
+				</SetMailbox>
+
+				<CustomBehavior File="Message" Text="Bags are geting full, moving to vendor and mailbox." LogColor="Lime" />
+				<If Condition="SpellManager.HasSpell(&quot;Wisdom of the Four Winds&quot;)">
+					<CustomBehavior File="FlyTo" X="871.1721" Y="274.3196" Z="503.2269" />
+				</If>
+				<CustomBehavior File="ForceSetVendor" DoMail="True" DoRepair="True" DoSell="True" DoTrain="False" />
+			</If>		
+
+			<If Condition="SpellManager.HasSpell(&quot;Wisdom of the Four Winds&quot;)">
+				<CustomBehavior File="Message" Text="Flying to farm location" LogColor="Lime" />
+				<CustomBehavior File="FlyTo" X="1407.339" Y="1620.791" Z="351.0586" />
+				<CustomBehavior File="ForcedDismount" />
+			</If>
+			<If Condition="!SpellManager.HasSpell(&quot;Wisdom of the Four Winds&quot;)">
+				<CustomBehavior File="Message" Text="I can not fly here, taking transport if avilable." LogColor="Lime" />
+				<CustomBehavior File="ForcedDismount" />
+			</If>
+			
+			<While Condition="(Me.FreeBagSlots &gt; 6) &amp;&amp; (Me.LowestDurabilityPercent &lt; 20.0)">
+				<SetGrindArea>
+					<GrindArea> 
+						<Factions>1712</Factions>
+						<TargetMinLevel>1</TargetMinLevel>
+						<TargetMaxLevel>101</TargetMaxLevel>	
+						<Hotspots>
+						<Hotspot X="1407.339" Y="1620.791" Z="351.0586" />
+						<Hotspot X="1413.259" Y="1660.118" Z="344.237" />
+						<Hotspot X="1422.621" Y="1699.573" Z="344.2368" />
+						<Hotspot X="1449.028" Y="1729.716" Z="348.3035" />
+						<Hotspot X="1480.005" Y="1755.28" Z="353.8382" />
+						<Hotspot X="1501.066" Y="1721.112" Z="364.3851" />
+						<Hotspot X="1536.735" Y="1702.524" Z="368.8704" />
+						<Hotspot X="1554.114" Y="1668.057" Z="380.6382" />
+						<Hotspot X="1540.002" Y="1629.26" Z="380.9188" />
+						<Hotspot X="1546.433" Y="1589.808" Z="389.6001" />
+						<Hotspot X="1512.128" Y="1568.715" Z="389.8194" />
+						<Hotspot X="1473.562" Y="1559.986" Z="400.0696" />
+						<Hotspot X="1510.505" Y="1571.63" Z="388.9201" />
+						<Hotspot X="1527.836" Y="1608.137" Z="382.5761" />
+						<Hotspot X="1492.714" Y="1628.022" Z="376.1584" />
+						<Hotspot X="1452.993" Y="1624.096" Z="366.6783" />
+						<Hotspot X="1414.341" Y="1622.669" Z="353.4193" />
+						</Hotspots>
+					</GrindArea></SetGrindArea>
+					<GrindTo Condition="(Me.FreeBagSlots &lt;= 6)" GoalText="Farming Mote of Harmony" />
+					<If condition="true">
+					<While Condition="(HasItem(87391))" > <!-- Strange Bloated Stomach -->
+						<CustomBehavior File="Misc\RunLua" Lua="UseItemByName(87391)" WaitTime="1000" />
+						<CustomBehavior File="Message" Text="Opening Plundered Treasure" LogColor="Lime" />
+						<CustomBehavior File="WaitTimer" WaitTime="1000" GoalText="Opening Plundered Treasure {TimeRemaining}" />
+					</While>
+					<While Condition="(HasItem(72201))" > <!-- Plump Intestines -->
+						<CustomBehavior File="Misc\RunLua" Lua="UseItemByName(72201)" WaitTime="1000" />
+						<CustomBehavior File="Message" Text="Opening Plump Intestines" LogColor="Lime" />
+						<CustomBehavior File="WaitTimer" WaitTime="1000" GoalText="Opening Plump Intestines {TimeRemaining}" />
+					</While>
+					 <!-- Removing crap -->
+					<CustomBehavior File="Message" Text="Removing worthless useless crap." LogColor="Lime" />
+					<CustomBehavior File="DeleteItems" Ids="81205" />
+				</If>
+			</While> 
+		</While> 
+
+	</QuestOrder>
+
+</HBProfile>

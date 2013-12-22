@@ -1,0 +1,72 @@
+﻿<!--
+Created by Cisem
+http://cisems.wordpress.com
+-->
+
+ <HBProfile>
+
+   <Name>[A] [Q. Farm] Epics in Timeless Isle by Cisem</Name>
+   <MinLevel>1</MinLevel>
+   <MaxLevel>999</MaxLevel>
+   
+   <MinDurability>0.3</MinDurability>
+   <MinFreeBagSlots>1</MinFreeBagSlots>
+   
+   <MailGrey>False</MailGrey>
+   <MailWhite>False</MailWhite>
+   <MailGreen>False</MailGreen>
+   <MailBlue>False</MailBlue>
+   <MailPurple>False</MailPurple>
+   
+   <SellGrey>True</SellGrey>
+   <SellWhite>False</SellWhite>
+   <SellGreen>False</SellGreen>
+   <SellBlue>False</SellBlue>
+   <SellPurple>False</SellPurple>
+   
+   <TargetElites>True</TargetElites>	
+   
+   <AvoidMobs>
+   <Mob Name="Great Turtle" Entry="72764" />
+   </AvoidMobs>
+   
+   <Blackspots>
+   </Blackspots>
+   
+   <Mailboxes>
+   </Mailboxes>
+   
+   <Vendors>
+   <Vendor Name="Sentry Yinli" Entry="73401" Type="Repair" X="-903.1823" Y="-4649.057" Z="5.229353" />
+   </Vendors>
+   
+   <QuestOrder>
+   <ClearVendor />
+   <ClearMailbox />
+   
+   <While Condition="true" >
+   <If Condition="((Me.FreeBagSlots &lt;= 10) || Me.LowestDurabilityPercent &gt; 20.0)" >
+
+   <CustomBehavior File="Message" Text="Moving to farm location" LogColor="Lime" />
+   <CustomBehavior File="FlyTo" X="-878.2702" Y="-4678.407" Z="7.050506" />
+   <CustomBehavior File="ForcedDismount" />
+   </If>
+   <While Condition="(Me.FreeBagSlots &gt; 6) &amp;&amp; (Me.LowestDurabilityPercent &lt; 20.0)">
+   
+   <SetGrindArea>
+   <GrindArea>
+   <TargetMinLevel>90</TargetMinLevel>
+   <TargetMaxLevel>95</TargetMaxLevel>
+   <Factions>2136</Factions>
+   <MaxDistance>100</MaxDistance>
+   <Hotspots>   
+<Hotspot X="-878.2702" Y="-4678.407" Z="7.050506" />
+   </Hotspots>
+   </GrindArea>
+   </SetGrindArea>
+   
+   <GrindTo Condition="(Me.FreeBagSlots &lt;= 6)" GoalText="Farming Epics" />
+   </While>
+   </While>
+   </QuestOrder>
+</HBProfile>

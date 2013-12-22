@@ -1,0 +1,53 @@
+﻿<!--
+Created by Cisem
+http://cisems.wordpress.com
+-->
+
+ <HBProfile>
+
+   <Name>Gulp Frog</Name>
+   <MinLevel>1</MinLevel>
+   <MaxLevel>999</MaxLevel>
+   
+   <MinDurability>0.3</MinDurability>
+   <MinFreeBagSlots>1</MinFreeBagSlots>
+   
+   <MailGrey>False</MailGrey>
+   <MailWhite>False</MailWhite>
+   <MailGreen>False</MailGreen>
+   <MailBlue>False</MailBlue>
+   <MailPurple>False</MailPurple>
+   
+   <SellGrey>True</SellGrey>
+   <SellWhite>False</SellWhite>
+   <SellGreen>False</SellGreen>
+   <SellBlue>False</SellBlue>
+   <SellPurple>False</SellPurple>
+   
+   <ProtectedItems>
+   </ProtectedItems>
+   
+   <TargetElites>True</TargetElites>	
+   
+   <AvoidMobs>
+   </AvoidMobs>
+   
+   <Blackspots>
+   </Blackspots>
+   
+   <Mailboxes>
+   </Mailboxes>
+   
+   <Vendors>
+   </Vendors>
+   
+   <GrindArea>
+       <TargetMinLevel>90</TargetMinLevel>
+       <TargetMaxLevel>91</TargetMaxLevel>
+       <Factions>16</Factions>
+       <MaxDistance>30</MaxDistance>
+       <Hotspots>
+<Hotspot X="-847.0535" Y="-5642.679" Z="2.862062" />
+		</Hotspots>
+   </GrindArea>
+</HBProfile>

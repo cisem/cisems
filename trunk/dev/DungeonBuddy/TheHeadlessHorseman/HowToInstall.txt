@@ -1,0 +1,3 @@
+HOW TO INSTALL
+Coren Direbrew.cs - Dungeon Scripts\Classic\Dungeons
+Coren Direbrew.xml - Default Profiles\DungeonBuddy\Classic\Dungeons

@@ -1,0 +1,59 @@
+<!--
+Created by Cisem
+http://cisems.wordpress.com
+-->
+
+ <HBProfile>
+
+   <Name>[A] [Grind] Epics in Timeless Isle by Cisem</Name>
+   <MinLevel>1</MinLevel>
+   <MaxLevel>999</MaxLevel>
+   
+   <MinDurability>0.3</MinDurability>
+   <MinFreeBagSlots>1</MinFreeBagSlots>
+   
+   <MailGrey>False</MailGrey>
+   <MailWhite>False</MailWhite>
+   <MailGreen>False</MailGreen>
+   <MailBlue>False</MailBlue>
+   <MailPurple>False</MailPurple>
+   
+   <SellGrey>True</SellGrey>
+   <SellWhite>False</SellWhite>
+   <SellGreen>False</SellGreen>
+   <SellBlue>False</SellBlue>
+   <SellPurple>False</SellPurple>
+   
+   <ProtectedItems>
+		<Item name="Essence of Air" entry="7082" />
+   </ProtectedItems>
+   
+   <TargetElites>False</TargetElites>	
+   
+   <AvoidMobs>
+   <Mob Name="Great Turtle" Entry="72764" />
+   <Mob Name="Ancient Spineclaw" Entry="72766" />
+   </AvoidMobs>
+   
+   <Blackspots>
+   </Blackspots>
+   
+   <Mailboxes>
+   </Mailboxes>
+   
+   <Vendors>
+		 <Vendor Name="Sentry Yinli" Entry="73401" Type="Repair" X="-903.1823" Y="-4649.057" Z="5.229353" />
+   </Vendors>
+   
+   <GrindArea>
+       <TargetMinLevel>90</TargetMinLevel>
+       <TargetMaxLevel>90</TargetMaxLevel>
+       <Factions>2136</Factions>
+       <MaxDistance>30</MaxDistance>
+       <Hotspots>
+	   <Hotspot X="-888.5898" Y="-4684.565" Z="5.754487" />
+	   <Hotspot X="-822.1174" Y="-4656.6" Z="5.421772" />
+	   <Hotspot X="-780.4447" Y="-4658.54" Z="5.995515" />
+		</Hotspots>
+   </GrindArea>
+</HBProfile>
