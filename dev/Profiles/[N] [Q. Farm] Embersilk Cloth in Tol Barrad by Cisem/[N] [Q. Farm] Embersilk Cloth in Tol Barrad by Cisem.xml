@@ -24,12 +24,13 @@ http://cisems.wordpress.com
    <SellBlue>False</SellBlue>
    <SellPurple>False</SellPurple>
    
-   <TargetElites>False</TargetElites>	
+   <TargetElites>False</TargetElites>
    
    <AvoidMobs>
    </AvoidMobs>
    
    <Blackspots>
+   <Blackspot X="-569.5121" Y="1409.059" Z="24.32528" Radius="35.92596" />
    </Blackspots>
    
    <Mailboxes>
@@ -44,6 +45,14 @@ http://cisems.wordpress.com
    
    <While Condition="true" >
    <If Condition="((Me.FreeBagSlots &lt;= 10) || Me.LowestDurabilityPercent &gt; 20.0)" >
+   <SetVendor>
+   <Vendors>
+   <Vendor Name="Kevin Geissler" Entry="48251" Type="Repair" X="-374.3594" Y="1052.682" Z="21.98277" />
+   </Vendors>
+   </SetVendor>
+   <CustomBehavior File="Message" Text="Bags are geting full, running to vendor." LogColor="Lime" />
+   <CustomBehavior File="FlyTo" X="-374.3594" Y="1052.682" Z="21.98277" />
+   <CustomBehavior File="ForceSetVendor" DoMail="True" DoRepair="True" DoSell="True" DoTrain="False" />  
 
    <CustomBehavior File="Message" Text="Moving to farm location" LogColor="Lime" />
    <CustomBehavior File="FlyTo" X="-482.4363" Y="1532.406" Z="18.73154" />
@@ -53,9 +62,9 @@ http://cisems.wordpress.com
    
    <SetGrindArea>
    <GrindArea>
-   <TargetMinLevel>84</TargetMinLevel>
-   <TargetMaxLevel>87</TargetMaxLevel>
-   <Factions>14 189</Factions>
+   <TargetMinLevel>85</TargetMinLevel>
+   <TargetMaxLevel>85</TargetMaxLevel>
+   <Factions>14 189 2355</Factions>
    <MaxDistance>100</MaxDistance>
    <Hotspots>   
 <Hotspot X="-482.4363" Y="1532.406" Z="18.73154" />
