@@ -1,6 +1,6 @@
 <!--
 Created by Cisem
-http://cisems.wordpress.com
+http://www.cisem.se
 -->
 
  <HBProfile>
@@ -91,11 +91,6 @@ http://cisems.wordpress.com
    <CustomBehavior File="Misc\RunLua" Lua="UseItemByName(72201)" WaitTime="1000" />
    <CustomBehavior File="Message" Text="Open Plump Intestines" LogColor="Lime" />
    <CustomBehavior File="WaitTimer" WaitTime="1000" GoalText="Open Plump Intestines {TimeRemaining}" />
-   </While> 
-   <While Condition="(HasItem(87391))" > <!-- Plundered Treasure -->
-   <CustomBehavior File="Misc\RunLua" Lua="UseItemByName(87391)" WaitTime="1000" />
-   <CustomBehavior File="Message" Text="Open Plundered Treasure" LogColor="Lime" />
-   <CustomBehavior File="WaitTimer" WaitTime="1000" GoalText="Open Plundered Treasure {TimeRemaining}" />
    </While>
    <CustomBehavior File="Message" Text="Removing gray item with low vendor value." LogColor="Lime" />
    <CustomBehavior File="DeleteItems" Ids="81201, 81197, 3181" />
