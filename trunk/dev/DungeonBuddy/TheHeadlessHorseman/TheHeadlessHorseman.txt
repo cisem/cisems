@@ -5,6 +5,10 @@ When it's Hallow's End event.
 WHAT IS "Hallow's End?"
 Hallow's End is a spooky celebration of the Forsaken breaking away from the Scourge. This holiday is celebrated all across Azeroth with trick-or-treating, apple bobbing and more! This holiday is an in-game version Halloween, though it is not a one day only event.
 
+HOW TO INSTALL
+Coren Direbrew.cs - Dungeon Scripts\Classic\Dungeons
+Coren Direbrew.xml - Default Profiles\DungeonBuddy\Classic\Dungeons
+
 URL
 The Headless Horseman - http://www.wowhead.com/npc=23682/
 Hallow's End - http://www.wowhead.com/event=324
