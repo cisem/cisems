@@ -1,7 +1,7 @@
 ﻿/*
-Crystal of Insanity - Increases all stats by 500 for 1 hour
+Battle Standard of Coordination - increases the experience, honor and reputation gain from killing monsters for all guild members that stay within 100 yards of the Battle Standard by 15%.  Lasts 15 min. (10 Min Cooldown).
 Created by Phelon EDIT BY CISEM
-http://cisems.wordpress.com
+http://www.cisem.se
 */
 using System.IO;
 using System.Reflection;
