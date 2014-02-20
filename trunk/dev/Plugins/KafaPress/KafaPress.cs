@@ -1,7 +1,7 @@
 ﻿/*
 Kafa Press - Increases your Haste by 4000 for 25 sec!
 Created by Cisem
-http://cisems.wordpress.com
+http://www.cisem.se
 */
 using System.IO;
 using System.Reflection;
