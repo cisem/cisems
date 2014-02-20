@@ -1,4 +1,9 @@
-﻿using System.ComponentModel;
+﻿/*
+Potion of Luck - Allows you to sometimes find extra treasure from monsters in Pandaria.  Lasts 20 min
+Created by Cisem
+http://www.cisem.se
+*/
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Threading;

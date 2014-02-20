@@ -1,7 +1,7 @@
 ﻿/*
 Potion of Luck - Allows you to sometimes find extra treasure from monsters in Pandaria.  Lasts 20 min
 Created by Cisem
-http://cisems.wordpress.com
+http://www.cisem.se
 */
 using System.IO;
 using System.Reflection;
