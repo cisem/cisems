@@ -9,3 +9,4 @@
 
 Dev = Projects that are under development
 Pub = Projects that are public
+Zips = Mixed things
