@@ -1,4 +1,8 @@
-﻿using System.ComponentModel;
+﻿/*
+Potion of Treasure Finding - Allows you to sometimes find extra treasure from monsters in Mount Hyjal, Vashj'ir, Deepholm, Twilight Highlands and Uldum.  Lasts 1 hour. Created by Cisem
+http://www.cisem.se
+*/
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Threading;
