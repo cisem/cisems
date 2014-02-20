@@ -1,7 +1,7 @@
 ﻿/*
 Crystal of Insanity - Increases all stats by 500 for 1 hour
 Created by Cisem
-http://cisems.wordpress.com
+http://www.cisem.se
 */
 using System.IO;
 using System.Reflection;
