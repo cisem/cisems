@@ -1,0 +1,99 @@
+﻿<!--
+Created by Cisem
+http://www.cisem.se
+-->
+
+ <HBProfile>
+
+   <Name>[N] [Q. Farm] Crystallized Fire in Wintergrasp by Cisem</Name>
+   <MinLevel>1</MinLevel>
+   <MaxLevel>999</MaxLevel>
+   
+   <MinDurability>0.3</MinDurability>
+   <MinFreeBagSlots>1</MinFreeBagSlots>
+   
+   <MailGrey>False</MailGrey>
+   <MailWhite>False</MailWhite>
+   <MailGreen>False</MailGreen>
+   <MailBlue>False</MailBlue>
+   <MailPurple>False</MailPurple>
+   
+   <SellGrey>True</SellGrey>
+   <SellWhite>False</SellWhite>
+   <SellGreen>False</SellGreen>
+   <SellBlue>False</SellBlue>
+   <SellPurple>False</SellPurple>
+   
+   <TargetElites>False</TargetElites>
+   
+   <AvoidMobs>
+   </AvoidMobs>
+   
+   <Blackspots>
+   </Blackspots>
+   
+   <Mailboxes>
+   </Mailboxes>
+   
+   <Vendors>
+   </Vendors>
+   
+   <QuestOrder>
+   <ClearVendor />
+   <ClearMailbox />
+   
+   <While Condition="true" >
+   <If Condition="((Me.FreeBagSlots &lt;= 10) || Me.LowestDurabilityPercent &gt; 20.0)" >
+   <SetVendor>
+   <Vendors>
+   <Vendor Name="Kevin Geissler" Entry="48251" Type="Repair" X="-374.3594" Y="1052.682" Z="21.98277" />
+   </Vendors>
+   </SetVendor>
+   <CustomBehavior File="Message" Text="Bags are geting full, running to vendor." LogColor="Lime" />
+   <CustomBehavior File="FlyTo" X="-374.3594" Y="1052.682" Z="21.98277" />
+   <CustomBehavior File="ForceSetVendor" DoMail="True" DoRepair="True" DoSell="True" DoTrain="False" />  
+
+   <CustomBehavior File="Message" Text="Moving to farm location" LogColor="Lime" />
+   <CustomBehavior File="FlyTo" X="-482.4363" Y="1532.406" Z="18.73154" />
+   <CustomBehavior File="ForcedDismount" />
+   </If>
+   <While Condition="(Me.FreeBagSlots &gt; 6) &amp;&amp; (Me.LowestDurabilityPercent &lt; 20.0)">
+   
+   <SetGrindArea>
+   <GrindArea>
+   <TargetMinLevel>80</TargetMinLevel>
+   <TargetMaxLevel>80</TargetMaxLevel>
+   <Factions>91 834</Factions>
+   <MaxDistance>100</MaxDistance>
+   <Hotspots>   
+<Hotspot X="4418.848" Y="1718.506" Z="396.7309" />
+<Hotspot X="4427.914" Y="1757.501" Z="397.9817" />
+<Hotspot X="4437.881" Y="1797.401" Z="392.5218" />
+<Hotspot X="4462.385" Y="1848.246" Z="379.1179" />
+<Hotspot X="4425.253" Y="1829.126" Z="376.6679" />
+<Hotspot X="4385.015" Y="1817.138" Z="354.1201" />
+<Hotspot X="4377.477" Y="1777.482" Z="356.7372" />
+<Hotspot X="4338.267" Y="1771.12" Z="351.807" />
+<Hotspot X="4305.957" Y="1746.127" Z="352.8112" />
+<Hotspot X="4265.504" Y="1753.328" Z="347.8059" />
+<Hotspot X="4285.801" Y="1788.46" Z="351.3199" />
+<Hotspot X="4316.572" Y="1817.344" Z="348.5388" />
+<Hotspot X="4340.872" Y="1848.468" Z="356.516" />
+<Hotspot X="4317.056" Y="1881.457" Z="355.4864" />
+<Hotspot X="4286.681" Y="1855.029" Z="353.0674" />
+<Hotspot X="4260.637" Y="1824.66" Z="349.7047" />
+<Hotspot X="4252.814" Y="1785.048" Z="350.6282" />
+<Hotspot X="4237.836" Y="1819.554" Z="368.0967" />
+<Hotspot X="4212.955" Y="1847.801" Z="353.6716" />
+<Hotspot X="4240.809" Y="1877.5" Z="355.2898" />
+<Hotspot X="4262.654" Y="1896.361" Z="384.1055" />
+<Hotspot X="4318.251" Y="1907.226" Z="366.6759" />
+   </Hotspots>
+   </GrindArea>
+   </SetGrindArea>
+   
+   <GrindTo Condition="(Me.FreeBagSlots &lt;= 6)" GoalText="Farming Crystallized Fire" />
+   </While>
+   </While>
+   </QuestOrder>
+</HBProfile>
