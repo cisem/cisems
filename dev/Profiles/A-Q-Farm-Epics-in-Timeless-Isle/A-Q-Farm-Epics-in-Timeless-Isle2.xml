@@ -1,6 +1,6 @@
 <!--
 Created by Cisem
-http://cisems.wordpress.com
+http://www.cisem.se
 -->
 
  <HBProfile>
@@ -25,6 +25,7 @@ http://cisems.wordpress.com
    <SellPurple>False</SellPurple>
    
    <ProtectedItems>
+		<Item name="Essence of Air" entry="7082" />
    </ProtectedItems>
    
    <TargetElites>False</TargetElites>	
@@ -45,17 +46,14 @@ http://cisems.wordpress.com
    </Vendors>
    
    <GrindArea>
-       <TargetMinLevel>1</TargetMinLevel>
-       <TargetMaxLevel>999</TargetMaxLevel>
-       <Factions></Factions>
-       <MaxDistance>100</MaxDistance>
+       <TargetMinLevel>90</TargetMinLevel>
+       <TargetMaxLevel>90</TargetMaxLevel>
+       <Factions>2136</Factions>
+       <MaxDistance>30</MaxDistance>
        <Hotspots>
 	   <Hotspot X="-888.5898" Y="-4684.565" Z="5.754487" />
 	   <Hotspot X="-822.1174" Y="-4656.6" Z="5.421772" />
 	   <Hotspot X="-780.4447" Y="-4658.54" Z="5.995515" />
-	   <!-- Moss-Covered Chest
-	   <Hotspot X="-612.0946" Y="-4683.243" Z="5.032507" />
-	   -->
 		</Hotspots>
    </GrindArea>
 </HBProfile>
