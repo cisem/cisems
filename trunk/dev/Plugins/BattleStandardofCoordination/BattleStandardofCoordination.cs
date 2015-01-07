@@ -70,7 +70,7 @@ namespace  BattleStandardofCoordination
                 }
             }
 		}
-        public override void Initialize()
+        public override void OnEnable()
         {
         }
     }
