@@ -47,7 +47,7 @@ namespace COIhelper
         { Logging.Write("[COI]:" + format, args); }
         private static LocalPlayer Me { get { return StyxWoW.Me; } }
 
-        public override void Initialize() 
+        public override void OnEnable() 
         {
             Logging.Write(Colors.Lime, "Potion of Luck 1.1");
         }
