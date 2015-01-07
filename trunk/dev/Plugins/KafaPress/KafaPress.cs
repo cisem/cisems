@@ -70,7 +70,7 @@ namespace  CrystalofInsanity
             }
         }
 
-        public override void Initialize()
+        public override void OnEnable()
         {
         }
     }
